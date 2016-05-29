@@ -14,14 +14,14 @@ myImage.onclick = function() {
 function setUserName() {
 	var myName = prompt('Please insert your name.');
 	localStorage.setItem('name', myName);
-	myHeading.textContent = 'Mozilla is cool, ' + myName; 
+	myHeading.textContent = 'This is Jonathan, Welcome traveler + myName.'; 
 }
 
 if(!localStorage.getItem('name')) {
 	setUserName();
 } else {
 	var storedName = localStorage.getItem('name');
-	myHeading.textContent = 'Mozilla is cool, ' + storedName; 
+	myHeading.textContent = 'This is Jonathan, Welcome traveler + storedName.'; 
 }
 
 myButton.onclick = function () {
