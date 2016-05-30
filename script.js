@@ -1,5 +1,7 @@
-var i=0;
+function init(){
+i=0;
 var names = [];
+}
 
 document.getElementById("foot01").innerHTML =
 "<p>&hearts;  " + new Date().getFullYear() + " Jonathan Claypool </p>";
@@ -9,7 +11,7 @@ document.getElementById("nav01").innerHTML =
 "<li><a href='Casualties.html'>Casualties</a></li>" + "<li><a href='Wall.html'>Wall</a></li>"
 + "</ul>";
 
-document.getElementById("woh").innerHTML = full;
+document.getElementById("woh").innerHTML = names;
 
 function displayName() {
 var fname =	document.getElementById("firstname").text; 
