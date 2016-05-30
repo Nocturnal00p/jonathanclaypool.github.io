@@ -6,7 +6,9 @@ document.getElementById("nav01").innerHTML =
 "<li><a href='Casualties.html'>Casualties</a></li>" + "<li><a href='Wall.html'>Wall</a></li>"
 + "</ul>";
 
+
+function displayName() {
 var fname =	document.getElementById("firstname").value;
 var lname =	document.getElementById("lastname").value;
-
 document.getElementById("woh").innerHTML = fname + " " + lname + "<br>";
+}
