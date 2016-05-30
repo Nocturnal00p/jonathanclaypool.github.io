@@ -8,9 +8,9 @@ document.getElementById("nav01").innerHTML =
 
 
 function displayName() {
-var fname =	document.getElementById("firstname").value; 
+var fname =	document.getElementById("firstname").text; 
 alert(fname);
-var lname =	document.getElementById("lastname").value;
+var lname =	document.getElementById("lastname").text;
 alert(lname);
 document.getElementById("woh").innerHTML = fname + " " + lname + "<br>";
 }
