@@ -5,3 +5,8 @@ document.getElementById("nav01").innerHTML =
 "<ul id='menu'>" + "<li><a href='index.html'>Home</a></li>" +
 "<li><a href='Casualties.html'>Casualties</a></li>" + "<li><a href='Wall.html'>Wall</a></li>"
 + "</ul>";
+
+var fname =	document.getElementById("firstname").value;
+var lname =	document.getElementById("lastname").value;
+
+document.getElementById("woh").innerHTML = fname + " " + lname + "<br>";
