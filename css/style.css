@@ -48,7 +48,10 @@ img {
 
 #page {
 	width: 80%;
-	border: 5px solid #706f6f;
+	border-left: 5px solid #706f6f;
+	border-right:5px solid #706f6f;
+	border-top:5px solid #706f6f;
+	border-bottom:5px solid #706f6f;
 	background-color: #E6B27E;
 	float: left;
 	padding: 0 10px 10px 10px;
