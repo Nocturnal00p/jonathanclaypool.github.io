@@ -15,7 +15,7 @@ if (w < 1000)
 	document.getElementById("menu").style.borderRight = "5px solid #706f6f";
 	document.getElementById("menu").style.borderBottom = "5px none #706f6f";
 	document.getElementById("h1").style.fontSize = "30px";
-	document.getElementById("p1").style.fontSize = "10px";
+	document.getElementById("p1").style.fontSize = "12px";
 	}
 console.log(w);
 
@@ -72,4 +72,13 @@ function imagePage(){
 function rotateColor(){
 	countColors = (countColors+1)%colors.length
 	document.getElementById("h1").style.textShadow = "3px 3px 3px " + colors[countColors-1];
+}
+
+function artPage(){
+	countColors = 0;
+	rotateColor();
+	document.getElementById("h1").innerHTML = "Creativity Gallery";
+	fpPics[0].src = "";
+	fpPics[1].src = "";
+	document.getElementById("p1").innerHTML = "<video width=\"480\" height=\"204\" controls><source src=\"vid/vid1.mp4\" type=\"video/mp4\"></video><br>Video mix of Shigoto's 'Look at all the smiling faces' with Kpop";
 }
