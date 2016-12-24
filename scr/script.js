@@ -45,7 +45,7 @@ function resume(){
 
 function imagePage(){
 	document.getElementById("h1").innerHTML = "Images";
-	if (w > 1000)
+	if (1000)
 	{
 		document.getElementById("p1").innerHTML = "A rain pool on top of Enchanted Rock.<img src=\"img/img001l.jpg\">A view twenty floors up.<img src=\"img/img002l.jpg\">";
 	}
