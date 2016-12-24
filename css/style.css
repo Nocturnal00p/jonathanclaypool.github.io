@@ -33,28 +33,20 @@ img {
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 500px) {
-	.menu {
-			min-width: 20%;
-			background-color: #E6B27E;
-			float: left;
-			border: 5px solid #706f6f;
-			margin: auto;
-			padding: 20px;		
-			}
-}
-.menu {
+#menu {
 	min-width: 20%;
 	background-color: #E6B27E;
 	float: left;
-	border: 5px solid #706f6f;
-	border-right-style:hidden;
+	border-left: 5px solid #706f6f;
+	border-right:5px hidden #706f6f;
+	border-top:5px solid #706f6f;
+	border-bottom:5px solid #706f6f;
 	margin: auto;
 	padding: 20px;
 	
 }
 
-.page {
+#page {
 	width: 80%;
 	border: 5px solid #706f6f;
 	background-color: #E6B27E;
