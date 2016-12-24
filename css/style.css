@@ -1,15 +1,15 @@
-p, li {
+* {
+	box-sizing: border-box;
+}
+
+p{
 	text-align: center;
-	width: 100%;
+	width: 75%;
 	margin: 0 auto;
 }
 
 h1 {
-<<<<<<< HEAD
 	font-size: 40px;
-=======
-	font-size: 30px;
->>>>>>> origin/master
 	text-align: center;
 	width: 100%;
 	margin: 0;
@@ -24,11 +24,10 @@ html {
 }
 
 body {
-	width: 640px;
+	width: 75%;
 	margin: 0 auto;
 	background-color: #E6B27E;
-	padding: 0 20px 20px 20px;
-	border: 5px solid #706f6f;
+	padding: 0;
 }
 
 img {
@@ -36,4 +35,21 @@ img {
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
+}
+
+.menu {
+	width:25%;
+	padding: 10px;
+	background-color: #E6B27E;
+	float: left;
+	border: 5px solid #706f6f;
+	border-right-style:hidden;
+}
+
+.page {
+	width: 75%;
+	border: 5px solid #706f6f;
+	background-color: #E6B27E;
+	float: right;
+	padding: 0 10px 10px 10px;
 }
