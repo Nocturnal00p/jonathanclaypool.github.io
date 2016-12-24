@@ -31,7 +31,14 @@ function aboutMe(){
 
 function resume(){
 	document.getElementById("h1").innerHTML = "";
-	document.getElementById("p1").innerHTML = "<embed src=\"doc/resume.pdf\" type=\"application/pdf\" height=\"800\" width=\"800\">";
+	if(w > 1000)
+	{
+		document.getElementById("p1").innerHTML = "<embed src=\"doc/resume.pdf\" type=\"application/pdf\" height=\"800\" width=\"850\">";
+	}
+	else
+	{
+		document.getElementById("p1").innerHTML = "<a href=\"doc/resume.pdf\">Click here to view resume.</a>";
+	}
 	fpPics[0].src = "";
 	fpPics[1].src = "";
 }
