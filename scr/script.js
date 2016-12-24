@@ -31,7 +31,7 @@ function aboutMe(){
 
 function resume(){
 	document.getElementById("h1").innerHTML = "";
-	document.getElementById("p1").innerHTML = "<embed src=\"doc/resume.pdf\" type=\"application/pdf\" height=\"800\" width=\"640\">";
+	document.getElementById("p1").innerHTML = "<embed src=\"doc/resume.pdf\" type=\"application/pdf\" height=\"800\" width=\"800\">";
 	fpPics[0].src = "";
 	fpPics[1].src = "";
 }
