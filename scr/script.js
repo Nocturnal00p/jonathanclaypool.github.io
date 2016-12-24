@@ -4,7 +4,11 @@ var w = window.innerWidth;
 
 var colors = ['red','blue','green','gold'];
 
-var countColors = 0;
+var countColors = 1;
+
+var name;
+
+var gotName = 0;
 
 if (w < 1000)
 	{
@@ -16,8 +20,13 @@ if (w < 1000)
 console.log(w);
 
 function getName(){
-countColors = 0;
-var name = prompt("What is your name?");
+countColors = -1;
+rotateColor();
+if(gotName==0)
+{	name = prompt("What is your name?");
+	gotName = 1;
+	document.getElementById('home').innerHTML = "<button onclick=\"getName();\">Home</button>";
+}
 document.getElementById("h1").innerHTML = "&#161~Welcome, " + name + "~!"
 fpPics[0].src = "img/test640.jpg";
 fpPics[1].src = "img/test6402.jpg";
@@ -30,6 +39,7 @@ function myFunction(){
 
 function aboutMe(){
 	countColors = 0;
+	rotateColor();
 	document.getElementById("h1").innerHTML = "The year is 1994...";
 	fpPics[0].src = "img/about640.jpg";
 	fpPics[1].src = "";
@@ -52,6 +62,7 @@ function resume(){
 
 function imagePage(){
 	countColors = 0;
+	rotateColor();
 	document.getElementById("h1").innerHTML = "Images";
 	document.getElementById("p1").innerHTML = "A rain pool<img class=\"reel\" src=\"img/img001l.jpg\">A view twenty floors up<img class=\"reel\" src=\"img/img002l.jpg\">The sun begins to set<img class=\"reel\" src=\"img/img003l.jpg\">Moments later...<img class=\"reel\" src=\"img/img004l.jpg\">";
 	fpPics[0].src = "";
@@ -60,5 +71,5 @@ function imagePage(){
 
 function rotateColor(){
 	countColors = (countColors+1)%colors.length
-	document.getElementById("h1").style.textShadow = "3px 3px 3px " + colors[countColors];
+	document.getElementById("h1").style.textShadow = "3px 3px 3px " + colors[countColors-1];
 }
