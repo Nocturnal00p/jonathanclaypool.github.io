@@ -2,6 +2,8 @@ var fpPics = [document.getElementById("frontpage1"), document.getElementById("fr
 
 var w = window.innerWidth;
 
+var name = prompt("What is your name?");
+document.getElementById("h1").innerHTML = "!~Welcome, " + name + "~!"
 if (w < 1000)
 	{
 	document.getElementById("menu").style.borderRight = "5px solid #706f6f";
