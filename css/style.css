@@ -5,7 +5,11 @@ p, li {
 }
 
 h1 {
+<<<<<<< HEAD
 	font-size: 40px;
+=======
+	font-size: 30px;
+>>>>>>> origin/master
 	text-align: center;
 	width: 100%;
 	margin: 0;
