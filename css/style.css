@@ -37,8 +37,7 @@ img {
 }
 
 .menu {
-	width:25%;
-	padding: 10px;
+	width:10%;
 	background-color: #E6B27E;
 	float: left;
 	border: 5px solid #706f6f;
@@ -46,7 +45,7 @@ img {
 }
 
 .page {
-	width: 75%;
+	width: 90%;
 	border: 5px solid #706f6f;
 	background-color: #E6B27E;
 	float: right;
