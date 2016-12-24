@@ -45,14 +45,7 @@ function resume(){
 
 function imagePage(){
 	document.getElementById("h1").innerHTML = "Images";
-	if (1000)
-	{
-		document.getElementById("p1").innerHTML = "A rain pool on top of Enchanted Rock.<img src=\"img/img001l.jpg\">A view twenty floors up.<img src=\"img/img002l.jpg\">";
-	}
-	else
-	{
-		document.getElementById("p1").innerHTML = "A rain pool on top of Enchanted Rock.<img src=\"img/img001s.jpg\">A view twenty floors up.<img src=\"img/img002s.jpg\">";
-	}
+	document.getElementById("p1").innerHTML = "<span style=\"border-style:double\">A rain pool on top of Enchanted Rock</span><img class=\"reel\" src=\"img/img001l.jpg\"><span style=\"border-style:double\">A view twenty floors up.</span><img class=\"reel\" src=\"img/img002l.jpg\"><span style=\"border-style:double\">The sun begins to set</span><img class=\"reel\" src=\"img/img003l.jpg\"><span style=\"border-style:double\">Moments later...</span><img class=\"reel\" src=\"img/img004l.jpg\">";
 	fpPics[0].src = "";
 	fpPics[1].src = "";
 }

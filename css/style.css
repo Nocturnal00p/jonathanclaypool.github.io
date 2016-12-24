@@ -32,6 +32,9 @@ img {
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
+}
+
+.reel {
 	padding: 10px 0 10px 0;
 }
 
@@ -44,7 +47,7 @@ img {
 	border-top:5px solid #706f6f;
 	border-bottom:5px solid #706f6f;
 	margin: auto;
-	padding: 20px;
+	padding: 20px 50px;
 	
 }
 
