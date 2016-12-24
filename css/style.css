@@ -7,16 +7,8 @@ p{
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 640px) {
-	h1 {
-			font-size: 16px;
-			text-align: center;
-			text-shadow: 3px 3px 3px red;
-	}
-}
-
 h1 {
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 	text-shadow: 3px 3px 3px red;
 }
@@ -41,12 +33,25 @@ img {
 	margin: 0 auto;
 }
 
+@media screen and (max-width: 500px) {
+	.menu {
+			min-width: 20%;
+			background-color: #E6B27E;
+			float: left;
+			border: 5px solid #706f6f;
+			margin: auto;
+			padding: 20px;		
+			}
+}
 .menu {
-	width: 20%;
+	min-width: 20%;
 	background-color: #E6B27E;
 	float: left;
 	border: 5px solid #706f6f;
 	border-right-style:hidden;
+	margin: auto;
+	padding: 20px;
+	
 }
 
 .page {
