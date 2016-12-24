@@ -47,7 +47,7 @@ img {
 	border-top:5px solid #706f6f;
 	border-bottom:5px solid #706f6f;
 	margin: auto;
-	padding: 20px 50px;
+	padding: 10px;
 	
 }
 
@@ -60,4 +60,8 @@ img {
 	background-color: #E6B27E;
 	float: left;
 	padding: 0 10px 10px 10px;
+}
+
+#p1 {
+	font-size: 16px;
 }

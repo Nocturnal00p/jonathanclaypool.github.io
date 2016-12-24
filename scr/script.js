@@ -2,15 +2,21 @@ var fpPics = [document.getElementById("frontpage1"), document.getElementById("fr
 
 var w = window.innerWidth;
 
+var colors = ['red','blue','green','gold'];
+
+var countColors = 0;
+
 if (w < 1000)
 	{
 	document.getElementById("menu").style.borderRight = "5px solid #706f6f";
 	document.getElementById("menu").style.borderBottom = "5px none #706f6f";
 	document.getElementById("h1").style.fontSize = "30px";
+	document.getElementById("p1").style.fontSize = "10px";
 	}
 console.log(w);
 
 function getName(){
+countColors = 0;
 var name = prompt("What is your name?");
 document.getElementById("h1").innerHTML = "&#161~Welcome, " + name + "~!"
 fpPics[0].src = "img/test640.jpg";
@@ -23,6 +29,7 @@ function myFunction(){
 }
 
 function aboutMe(){
+	countColors = 0;
 	document.getElementById("h1").innerHTML = "The year is 1994...";
 	fpPics[0].src = "img/about640.jpg";
 	fpPics[1].src = "";
@@ -44,8 +51,14 @@ function resume(){
 }
 
 function imagePage(){
+	countColors = 0;
 	document.getElementById("h1").innerHTML = "Images";
-	document.getElementById("p1").innerHTML = "<span style=\"border-style:double\">A rain pool on top of Enchanted Rock</span><img class=\"reel\" src=\"img/img001l.jpg\"><span style=\"border-style:double\">A view twenty floors up.</span><img class=\"reel\" src=\"img/img002l.jpg\"><span style=\"border-style:double\">The sun begins to set</span><img class=\"reel\" src=\"img/img003l.jpg\"><span style=\"border-style:double\">Moments later...</span><img class=\"reel\" src=\"img/img004l.jpg\">";
+	document.getElementById("p1").innerHTML = "A rain pool<img class=\"reel\" src=\"img/img001l.jpg\">A view twenty floors up<img class=\"reel\" src=\"img/img002l.jpg\">The sun begins to set<img class=\"reel\" src=\"img/img003l.jpg\">Moments later...<img class=\"reel\" src=\"img/img004l.jpg\">";
 	fpPics[0].src = "";
 	fpPics[1].src = "";
+}
+
+function rotateColor(){
+	countColors = (countColors+1)%colors.length
+	document.getElementById("h1").style.textShadow = "3px 3px 3px " + colors[countColors];
 }
