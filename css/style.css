@@ -63,6 +63,7 @@ img {
 	background: ##e6ba8e;
 	background-image: url("../bkg/ZenBG.png");
 	float: left;
+	clear: none;
 	padding: 0 10px 10px 10px;
 }
 

@@ -88,6 +88,7 @@ function artPage(){
 	{
 		alert("Please use landscape view for Gallery");
 		document.getElementById("page").style.width = (w) + "px";
+		document.getElementById("page").style.clear = "left";
 		document.getElementById("p1").innerHTML = "<button onclick=\"startVideo();\">I Rotated</button>"
 	}
 	else{startVideo();}
