@@ -49,8 +49,8 @@ img {
 	border-right:5px hidden #706f6f;
 	border-top:5px solid #706f6f;
 	border-bottom:5px solid #706f6f;
-	margin: auto;
-	padding: 10px;
+	margin: 0, auto;
+	padding: 0;
 	
 }
 
@@ -71,5 +71,5 @@ img {
 }
 
 video {
-	background: #000000
+	background-color: #000000;
 }
