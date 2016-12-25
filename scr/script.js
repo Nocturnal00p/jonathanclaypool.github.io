@@ -80,5 +80,5 @@ function artPage(){
 	document.getElementById("h1").innerHTML = "Creativity Gallery";
 	fpPics[0].src = "";
 	fpPics[1].src = "";
-	document.getElementById("p1").innerHTML = "<video width=\"480\" height=\"204\" controls><source src=\"vid/vid1.mp4\" type=\"video/mp4\"></video><br>Video mix of Shigoto's 'Look at all the smiling faces' with Kpop";
+	document.getElementById("p1").innerHTML = "<video width=\"320\" height=\"204\" controls><source src=\"vid/vid1.mp4\" type=\"video/mp4\"></video><br>Video mix of Shigoto's 'Look at all the smiling faces' with Kpop";
 }
