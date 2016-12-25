@@ -87,6 +87,7 @@ function artPage(){
 	if(w < 480)
 	{
 		alert("Please use landscape view for Gallery");
+		document.getElementById("page").style.width = (w-40) + "px";
 	}
 	document.getElementById("p1").innerHTML = "<video width=\"300\" height=\"127\" controls><source src=\"vid/vid1.mp4\" type=\"video/mp4\"></video><br>Video mix of Shigoto's 'Look at all the smiling faces' with Kpop";
 }
