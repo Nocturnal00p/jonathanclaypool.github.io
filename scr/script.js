@@ -4,7 +4,7 @@ var w = window.innerWidth;
 
 var colors = ['red','blue','green','gold'];
 
-var countColors = 1;
+var countColors = 0;
 
 var name;
 
@@ -20,7 +20,7 @@ if (w < 1000)
 console.log(w);
 
 function getName(){
-countColors = -1;
+countColors = 0;
 rotateColor();
 if(gotName==0)
 {	name = prompt("What is your name?");
@@ -70,7 +70,7 @@ function imagePage(){
 }
 
 function rotateColor(){
-	countColors = (countColors+1)%colors.length
+	countColors = (countColors+1)%5;
 	document.getElementById("h1").style.textShadow = "3px 3px 3px " + colors[countColors-1];
 }
 
