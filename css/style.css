@@ -5,13 +5,14 @@
 p{
 	text-align: center;
 	margin: 0 auto;
-	padding: 10px 0 10px 0;
+	padding: 0 0 10px 0;
 }
 
 h1 {
 	font-size: 40px;
 	text-align: center;
 	text-shadow: 3px 3px 3px red;
+	margin: 10px 10px 5px 0;
 }
 
 html {
@@ -33,6 +34,7 @@ img {
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .reel {
@@ -48,9 +50,8 @@ img {
 	border-right:5px hidden #706f6f;
 	border-top:5px solid #706f6f;
 	border-bottom:5px solid #706f6f;
-	margin: 0, auto;
-	padding: 0;
-	
+	margin: 0;
+	padding: 0 10px 0 0;
 }
 
 #page {

@@ -27,10 +27,10 @@ if(gotName==0)
 	gotName = 1;
 	document.getElementById('home').innerHTML = "<button onclick=\"getName();\">Home</button>";
 }
-document.getElementById("h1").innerHTML = "&#161~Welcome, " + name + "~!"
-fpPics[0].src = "img/test640.jpg";
-fpPics[1].src = "img/test6402.jpg";
-document.getElementById("p1").innerHTML = "\"This is a very <strong>bad</strong> photograph.\" ~ Jonathan"
+document.getElementById("h1").innerHTML = "&#161~Welcome, " + name + "~!" + "<img class=\"reel\" id=\"frontpage1\" src=\"img/test640.jpg\">";
+document.getElementById("h1").style.margin = "10px 10px 5px 0";
+document.getElementById("p1").innerHTML = "\"This is a very <strong>bad</strong> photograph.\" ~ Jonathan";
+document.getElementById("h2").innerHTML = "<img id=\"frontpage2\" src=\"img/test6402.jpg\">";
 }
 
 function myFunction(){
@@ -40,14 +40,15 @@ function myFunction(){
 function aboutMe(){
 	countColors = 0;
 	setColor();
-	document.getElementById("h1").innerHTML = "The year is 1994...";
-	fpPics[0].src = "img/about640.jpg";
-	fpPics[1].src = "";
+	document.getElementById("h1").style.margin = "10px 10px 5px 0";
+	document.getElementById("h1").innerHTML = "The year is 1994...<img class=\"reel\" id=\"frontpage1\" src=\"img/about640.jpg\">";
+	document.getElementById("h2").innerHTML = "";
 	document.getElementById("p1").innerHTML = "Born and raised in Austin, TX<br>2009:Install first GPU (Radeon 5450)<br>2012:Graduated from Vandegrift Highschool<br>2015: Install second GPU (GTX 970)<br>2016:Graduated from University of Texas-Dallas";
 }
 
 function resume(){
 	document.getElementById("h1").innerHTML = "";
+	document.getElementById("h2").innerHTML = "";
 	if(w > 1000)
 	{
 		document.getElementById("p1").innerHTML = "<embed src=\"doc/resume.pdf\" type=\"application/pdf\" height=\"800\" width=\"850\">";
@@ -56,17 +57,15 @@ function resume(){
 	{
 		document.getElementById("p1").innerHTML = "<a href=\"doc/resume.pdf\">Click here to view resume.</a>";
 	}
-	fpPics[0].src = "";
-	fpPics[1].src = "";
 }
 
 function imagePage(){
 	countColors = 0;
 	setColor();
 	document.getElementById("h1").innerHTML = "Images";
+	document.getElementById("h2").innerHTML = "";
 	document.getElementById("p1").innerHTML = "A rain pool<img class=\"reel\" src=\"img/img001l.jpg\">A view twenty floors up<img class=\"reel\" src=\"img/img002l.jpg\">The sun begins to set<img class=\"reel\" src=\"img/img003l.jpg\">Moments later...<img class=\"reel\" src=\"img/img004l.jpg\">";
-	fpPics[0].src = "";
-	fpPics[1].src = "";
+	document.getElementById("h1").style.margin = "10px 10px 20px 0";
 }
 
 function setColor(){
@@ -82,6 +81,8 @@ function artPage(){
 	countColors = 0;
 	setColor();
 	document.getElementById("h1").innerHTML = "Creativity Gallery";
+	document.getElementById("h1").style.margin = "10px 10px 20px 0";
+	document.getElementById("h2").innerHTML = "";
 	fpPics[0].src = "";
 	fpPics[1].src = "";
 	if(w < 480)
