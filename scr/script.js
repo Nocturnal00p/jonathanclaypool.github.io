@@ -83,8 +83,6 @@ function artPage(){
 	document.getElementById("h1").innerHTML = "Creativity Gallery";
 	document.getElementById("h1").style.margin = "10px 10px 20px 0";
 	document.getElementById("h2").innerHTML = "";
-	fpPics[0].src = "";
-	fpPics[1].src = "";
 	if(w < 480)
 	{
 		alert("Please use landscape view for Gallery");
@@ -98,4 +96,5 @@ function artPage(){
 
 function startVideo () {
 	document.getElementById("p1").innerHTML = "<video width=\"300\" height=\"127\" controls><source src=\"vid/vid1.mp4\" type=\"video/mp4\"></video><br>Video mix of Shigoto's 'Look at all the smiling faces' with Kpop";
+	document.getElementById("h2").innerHTML = "Album Artwork<img class=\"reel\" src=\"img/a.jpg\"><img class=\"reel\" src=\"img/b.jpg\"><img class=\"reel\" src=\"img/c.jpg\"><img class=\"reel\" src=\"img/d.jpg\"><img class=\"reel\" src=\"img/e.jpg\"><img class=\"reel\" src=\"img/f.jpg\"><img class=\"reel\" src=\"img/g.jpg\"><img class=\"reel\" src=\"img/h.jpg\"><img class=\"reel\" src=\"img/i.jpg\">"
 }
