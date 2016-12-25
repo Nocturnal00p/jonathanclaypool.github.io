@@ -20,8 +20,8 @@ if (w < 1000)
 console.log(w);
 
 function getName(){
-countColors = 0;
-rotateColor();
+countColors =0;
+setColor();
 if(gotName==0)
 {	name = prompt("What is your name?");
 	gotName = 1;
@@ -39,7 +39,7 @@ function myFunction(){
 
 function aboutMe(){
 	countColors = 0;
-	rotateColor();
+	setColor();
 	document.getElementById("h1").innerHTML = "The year is 1994...";
 	fpPics[0].src = "img/about640.jpg";
 	fpPics[1].src = "";
@@ -62,23 +62,27 @@ function resume(){
 
 function imagePage(){
 	countColors = 0;
-	rotateColor();
+	setColor();
 	document.getElementById("h1").innerHTML = "Images";
 	document.getElementById("p1").innerHTML = "A rain pool<img class=\"reel\" src=\"img/img001l.jpg\">A view twenty floors up<img class=\"reel\" src=\"img/img002l.jpg\">The sun begins to set<img class=\"reel\" src=\"img/img003l.jpg\">Moments later...<img class=\"reel\" src=\"img/img004l.jpg\">";
 	fpPics[0].src = "";
 	fpPics[1].src = "";
 }
 
+function setColor(){
+	document.getElementById("h1").style.textShadow = "3px 3px 3px " + colors[countColors];
+}
+
 function rotateColor(){
-	countColors = (countColors+1)%5;
-	document.getElementById("h1").style.textShadow = "3px 3px 3px " + colors[countColors-1];
+	countColors = (countColors+1)%4;
+	setColor();
 }
 
 function artPage(){
 	countColors = 0;
-	rotateColor();
+	setColor();
 	document.getElementById("h1").innerHTML = "Creativity Gallery";
 	fpPics[0].src = "";
 	fpPics[1].src = "";
-	document.getElementById("p1").innerHTML = "<video width=\"320\" height=\"204\" controls><source src=\"vid/vid1.mp4\" type=\"video/mp4\"></video><br>Video mix of Shigoto's 'Look at all the smiling faces' with Kpop";
+	document.getElementById("p1").innerHTML = "<video width=\"300\" height=\"127\" controls><source src=\"vid/vid1.mp4\" type=\"video/mp4\"></video><br>Video mix of Shigoto's 'Look at all the smiling faces' with Kpop";
 }
