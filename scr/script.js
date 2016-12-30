@@ -24,6 +24,10 @@ countColors =0;
 setColor();
 if(gotName==0)
 {	name = prompt("What is your name?");
+	if (name == "")
+	{
+		name = "Traveler";
+	}
 	gotName = 1;
 	document.getElementById('home').innerHTML = "<button onclick=\"getName();\">Home</button>";
 }
